@@ -99,4 +99,5 @@ void init_pybind_runcontrol(py::module &m){
 		  "Called when a status object is recievied", py::arg("id"), py::arg("st"));
   runcontrol_.def("GetConfiguration", &eudaq::RunControl::GetConfiguration);
   runcontrol_.def("GetInitConfiguration", &eudaq::RunControl::GetInitConfiguration);
+  runcontrol_.def("GetRunNumber", &eudaq::RunControl::GetRunN);
 }
